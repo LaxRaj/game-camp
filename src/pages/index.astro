@@ -3,6 +3,9 @@ import Header from "@organisms/Header.astro";
 import Home from "@organisms/Home.astro";
 import Speakers from "@organisms/Speakers.astro";
 import Schedule from "@organisms/Schedule.astro";
+
+import ImageCarousel from "@/components/organisms/ImageCarousel.astro";
+
 import Faq from "@organisms/Faq.astro";
 
 import Spacer from "@atoms/Spacer.astro";
@@ -47,6 +50,8 @@ export const description =
     <Spacer />
     <Schedule />
     <Spacer />
+    <ImageCarousel />
+    <Spacer />
     <Faq />
     <ScrollUp />
   </body>
@@ -76,6 +81,11 @@ export const description =
   }
 
   #people {
+    background-image: url("../assets/images/backgrounds/3.gif");
+    background-size: cover;
+  }
+
+  #images {
     background-image: url("../assets/images/backgrounds/3.gif");
     background-size: cover;
   }

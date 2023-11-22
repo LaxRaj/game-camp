@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+import myImg from "../../assets/images/humans/Anas Bakhsh.jpeg"
+---
+
+<section 
+    id="images" 
+    class="flex min-h-screen items-center justify-center px-7 py-24"
+> 
+<div>
+   <Image 
+   src={myImg}
+   alt={`human 1 test image`}
+   width={500}
+   height={600}
+   />
+</div>
+</section>
